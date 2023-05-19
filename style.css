@@ -1,0 +1,413 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .carousel{
+    position: relative;
+    width: 45%;
+    padding: 1rem  5rem  0;
+  }
+.btnCarousel{
+  position: absolute;
+  width: 10rem;
+  bottom: 0;
+  left: 35%;
+}
+  .arrowImg{
+
+    width: 2rem;
+  }
+  button:hover{
+    cursor: pointer;
+    transform: scale(.98);
+    transition: all ease-in-out .1s;
+  }
+  body {
+    padding: 2rem;
+  }
+  .companyName {
+    z-index: 1;
+    font-size: 4rem;
+  }
+  .featureImg{
+    padding: .5rem;
+    width: 4rem;
+    height: 4rem;
+    border-right: 2px solid black;
+    margin-right: 1rem;
+    z-index: 1;
+  }
+  
+  
+  .featuresMenu{
+    display: flex;
+    flex-wrap:wrap;
+  justify-content: center;
+  
+  }
+  
+  .feature{
+    margin: 2rem 4rem;
+    width: 22rem;
+    height: 7rem;
+    padding:1.3rem 1rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+  border-radius: 5px;
+  position: relative;
+  background-color: black;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  color: white;
+  transition: all ease-in-out .2s;
+  overflow: hidden;
+  
+  }
+  .feature:hover{
+    transform: scale(1.05);
+  }
+  .feature::after{
+    position: absolute;
+    content:"";
+    width:21rem ;
+    height: 6rem;
+   top: .4rem;
+   left: .5rem;
+   background-color: #9eddfa;
+   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 5px;
+  }
+  
+  .feature::before  {
+    content: "";
+    position: absolute;
+    width:30rem;
+    height: 30rem;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  margin: auto;
+  top:-5rem;
+  left: -4rem;
+    z-index: 0;
+    animation: rotate 4s linear infinite;
+  }
+  .section2Heading{
+    text-align: center;
+  margin: 0 auto 1rem;
+    font-size: 4rem;
+    padding: 0 2rem 1rem;
+    border-bottom: 2px solid black;
+    width: fit-content;
+  
+  }
+  .section2{
+    border-radius: 0 0 10px 10px;
+  }
+  
+  
+  header, .section2 , .section3, .section4, footer {
+    background-image: linear-gradient(
+      to left,
+      #fbfbfb,
+      #ebebf7,
+      #dadbf3,
+      #c6ccef,
+      #b0beec,
+      #a5bfec,
+      #9bc1ec,
+      #90c2ea,
+      #9fd1e9,
+      #b5dee9,
+      #d0e9ec,
+      #ebf4f3
+    );
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   padding: 4rem  3rem;
+   position: relative;
+   overflow: hidden ;
+   margin-bottom: 1rem;
+   border-radius: 10px;
+  
+  }
+  
+  
+  .getStartedButton{
+    width: 10rem;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+    padding-right: 1rem 0;
+    background-color:  #bddafc;
+  
+  
+    margin-top: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  
+  }
+  header {
+    padding: 1rem 2rem 0;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+  }
+  header::before,
+  header:after
+   {
+    content: "";
+    width: 50rem;
+    height: 50rem;
+    position: absolute;
+    z-index: 0;
+  }
+  
+  header::before {
+    background-image: linear-gradient(
+      to left top,
+      #fbfbfb,
+      #e4e6f4,
+      #c7d2ef,
+      #a3c1e9,
+      #76b1e1
+    );
+    bottom:-40rem;
+    right:3.55rem;
+    transform: rotate(-50deg);
+  }
+  header::after {
+    top: -5rem;
+    left: -16rem;
+    transform: rotate(40deg);
+  
+    background-image: linear-gradient(
+      to right top,
+      #fbfbfb,
+      #e4e6f4,
+      #c7d2ef,
+      #a3c1e9,
+      #76b1e1
+    );
+  }
+  .headerHeading {
+    margin-bottom: 1rem;
+  }
+  .list{
+    color: black;
+    z-index: 1;
+  }
+  nav {
+    margin-bottom: 2rem;
+    width: 100%;
+    z-index: 1;
+  }
+  .navTitle{
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+  }
+  .navLink {
+    color: black;
+  }
+  .profilePic {
+    width: 25rem;
+    margin-right: 3rem;
+    z-index: 1;
+    
+  }
+  .sectionFeature{
+    position: relative;
+    z-index: 1;
+  }
+  .title {
+    margin-top: 6rem;
+    z-index: 1;
+    width: fit-content;
+    text-align: center;
+  }
+   .aboutUs{
+    display: flex;justify-content: space-between;flex-wrap: wrap;
+  } 
+  .aboutusHeading{
+    font-size: 3rem;
+  }
+  .aboutusHeading,.registerHeading{
+    margin-bottom: 2rem;
+  }
+  .aboutCompany{
+    font-size: 1.2rem;
+  }
+  .sessionPic{
+   border-radius: 5px; width: 22rem;height: 22rem;
+  border: 3px solid white ;
+  }
+  
+  .info{
+    
+    width: 35rem;
+  }
+
+ 
+
+  .leftPointer{
+    transform: rotate(90deg);
+  
+  }
+  .rightPointer{
+    transform: rotate(-90deg);
+    margin-left: 6rem;
+  }
+  .leftPointer:hover .arrowImg{
+  transform: rotate(90deg);
+  }
+  .rightPointer:hover .arrowImg{
+    transform: rotate(-90deg);
+    }
+  
+  .signup{
+    text-align: center;
+  }
+  
+  .registerHeading{
+    font-size: 2rem;
+  }
+    .mainRegisterBtn{
+      border: none;width: 15rem;
+      height: 3rem;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: transparent;
+    }
+    .mainRegisterBtn::before{
+  content:"";
+  width:17rem;
+  height: 17rem;
+  position: absolute;
+  left: -1rem;top: -5rem;
+  background: linear-gradient(90deg, rgba(61,215,211,1) 28%, rgba(0,168,255,1) 78%);
+  transition: all ease-in-out;
+  animation: rotate 4s linear infinite;
+    }
+  
+    .mainRegisterBtn::after{
+      content:"Register";
+      position: absolute;
+      background-color: white;
+      width: 14rem;height: 2rem;
+padding: .3rem 0;
+  font-weight: bold;
+      top:.5rem;left: 0.5rem;
+      border-radius: 5px;
+    }
+  
+    footer li{
+      list-style-type: none;
+    }
+    footer{
+      display: flex;
+    }
+    .details{
+      padding:0 2rem ;border-right: 1px solid black;
+      margin-right: 1rem;
+    }
+  .contacts{
+    padding: .5rem;
+  }
+  .contacts li:nth-child(1){
+    font-size: 1rem;margin-bottom: .5rem;
+  }
+  @keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(-360deg)
+    }
+  }
+  
+  
+  
+  @media only screen and (max-width: 460px)  {
+  body{
+    padding: 0.5rem;
+  }
+  .section2, .section3,.section4, footer{
+    padding: 1rem 1rem 2rem;
+  }
+    nav{
+    display: none;
+  }
+  header{
+    padding: 1rem 1rem 0;
+    height: 44.5rem;
+  }
+  .title{
+    margin-top: 1rem;
+  font-size: 1rem;
+  }
+  .btnCarousel{
+    left: 30%;
+  }
+  .companyName{
+    font-size: 3rem;
+  }
+.carousel{
+  width: 100%;
+  padding: 1rem 1.4rem 2rem;
+}
+  .profilePic{
+display:block;
+width: 100%;
+  
+  }
+  .section2Heading{
+    font-size: 2.5rem;
+  }
+.feature{
+  margin: 2rem 1rem;
+}
+  .featureImg{
+    width: 3rem;height: 3rem;
+  }
+  .listItem{
+    font-size: .8rem;
+  }
+  .feature::after{
+    width: 95%;
+  }
+  .info{
+    text-align: center;
+    
+  }
+  .aboutusHeading{
+    border-bottom: 2px solid black;
+  }
+  
+
+  header::after{
+    width: 30rem;
+    bottom:10rem;
+  }
+  header::before{
+    bottom: 10rem;
+  }
+  
+  .sessionPic{
+   height:20rem;
+  }
+  .details, .contacts{
+  font-size:.8rem ;
+    padding: 0 .6rem 0 0;
+  }
+  .details li h2{
+  
+    font-size: 1rem;
+  }
+  
+  }
